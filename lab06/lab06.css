@@ -1,0 +1,63 @@
+p:first-line 
+{
+font-weight: 800;
+
+}
+#name{	
+	border:solid;
+	border-color:#3C13AF;
+	background-color:#2C17B0;
+	
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#firstpage{	
+	border-color:1DD300;
+	background-color:green;
+	padding:5%;
+width: 50%;
+}
+
+.main{
+	border:solid;
+	border-color:#000000;
+	background-color:#FF9C00;
+	padding:20%;
+	border-radius:20px;
+
+
+}
+h1{
+	color:#00AC6B;
+	text-align:center;
+
+}
+.homepage
+{
+	color:blue;
+	text-align:center;
+	font-size: 200%;
+
+}
+.wiki
+{
+	color:blue;
+	text-align:center;
+	font-size: 200%;
+
+}
+#image{
+	border-style:solid;
+	clear:center;
+	float:right;
+	border-radius:10px;
+	
+}
+#image2{
+	border-style:solid;
+	clear:center;
+	float:right;
+	border-radius:10px;
+}	
+	

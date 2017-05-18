@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="style/lab09.css">
+		<title>chess</title>
+	</head> 
+
+
+    <body>
+
+         <div class="header">
+            <h2>Your chess level</h2>
+        </div>
+        <section>
+		
+
+            <form name = "myForm" id = "myForm" method="post" action = "http://webdevfoundations.net/scripts/formdemo.asp">
+                <fieldset>
+                   <div id="image">
+			
+			<img src="http://ts4.mm.bing.net/th?id=H.4679071783585955&pid=15.1"  width="180"/> </br>
+				  </div>
+				  
+				  <div id="image2">
+			
+			<img src="http://ts1.mm.bing.net/th?id=H.4690784168248148&pid=15.1"  width="200"/> </br>
+				  </div>
+				  
+				  
+				  <div class="form">
+				 
+				
+                    <table>
+                        <th><ol start="1">
+                            <li><div class="label">Name:
+                            <input type="text"  name="Name"  id="custName" />
+                            </li>
+							
+                            <li>Age:
+                            <input type="number"  name="Age"  id="custAge" min = "0" max = "110" />                            
+                            </li>
+							
+                            <li>Email:
+                            <input type="email" name="Email"  id="custEmail" placeholder="me@example.com" />
+                            </li>
+                            
+                      
+                        
+                            <li >where do you play chess?<br>
+                            <input type="checkbox" name="place" value="internet">
+                            internet
+                            <input type="checkbox" name="place" value="school">
+                            school
+                            <input type="checkbox" name="place" value="chess club">
+                            chess club </li>
+							
+                            <li>how long did you play chess?<br>
+                            <input type="radio" name="time" value="less than 1 year">
+                            <1 year
+                            <input type="radio" name="time" value="1-5 years">
+                            1-5 years
+                            <input type="radio" name="time" value="more than 5 years">
+                            >5 years </li>
+                        
+                        <li>
+                            win more or lose more
+                            <select name = "win or lose">
+								<option value = "na">i don't know</option>
+								<option value = "half">half and half</option>
+                                <option value = "win">win</option>
+                                <option value = "lose" >lose</option>
+                            </select></li>
+                        </div>
+                    </table>
+                    </div>
+                </fieldset>
+               
+                <center><input type="submit" />
+                <input type="reset" /></center>
+            </form>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,295 @@
+h1
+{
+	color:rgb(0,0,0);
+	font-family: arial;
+	text-align: center;
+
+}
+
+#player
+{
+
+	visibility: hidden;
+}
+body
+{
+	background: url("image/wall.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+	background-attachment: fixed;
+	
+}
+
+
+
+
+ul li
+{
+	width:100px;
+	height:75px;
+	background-color:red;
+	float: left;
+	margin: 20px 10px;
+	list-style:none;
+	border:5px solid #ffffff;
+	cursor:pointer;
+	transition-property:all;
+	transition-duration: 3000ms;
+	transition-timing-function: ease-in-out;
+
+}
+
+ul li:hover
+{
+	border:5px solid #ff0000;
+}
+
+
+
+
+
+/*image*/
+#toy01
+{
+	background: url("image/01.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy02
+{
+	background: url("image/02.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy03
+{
+	background: url("image/03.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+
+#toy04
+{
+	background: url("image/04.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy05
+{
+	background: url("image/05.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy06
+{
+	background: url("image/06.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy07
+{
+	background: url("image/07.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy08
+{
+	background: url("image/08.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy09
+{
+	background: url("image/09.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy10
+{
+	background: url("image/10.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy11
+{
+	background: url("image/11.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy12
+{
+	background: url("image/12.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy13
+{
+	background: url("image/13.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+
+#toy14
+{
+	background: url("image/14.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy15
+{
+	background: url("image/15.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy16
+{
+	background: url("image/16.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy17
+{
+	background: url("image/17.bmp") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy18
+{
+	background: url("image/18.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy19
+{
+	background: url("image/19.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy20
+{
+	background: url("image/20.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy21
+{
+	background: url("image/21.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy22
+{
+	background: url("image/22.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy23
+{
+	background: url("image/23.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+
+#toy24
+{
+	background: url("image/24.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy25
+{
+	background: url("image/25.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy26
+{
+	background: url("image/26.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy27
+{
+	background: url("image/27.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy28
+{
+	background: url("image/28.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy29
+{
+	background: url("image/29.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy30
+{
+	background: url("image/30.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy31
+{
+	background: url("image/31.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy32
+{
+	background: url("image/32.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy33
+{
+	background: url("image/33.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+
+#toy34
+{
+	background: url("image/34.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy35
+{
+	background: url("image/35.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy36
+{
+	background: url("image/36.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy37
+{
+	background: url("image/37.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy38
+{
+	background: url("image/38.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy39
+{
+	background: url("image/39.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy40
+{
+	background: url("image/40.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy41
+{
+	background: url("image/41.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy42
+{
+	background: url("image/42.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy43
+{
+	background: url("image/43.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+
+#toy44
+{
+	background: url("image/44.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy45
+{
+	background: url("image/45.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy46
+{
+	background: url("image/46.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy47
+{
+	background: url("image/47.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
+#toy48
+{
+	background: url("image/48.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+}
