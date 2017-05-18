@@ -1,0 +1,305 @@
+/*#test ul li
+{
+	display: inline-block;
+	position:fixed;
+	list-style:none;
+	margin-left:10px;
+	width:100px;
+	height:100px;
+	left:300px;
+	
+	
+}*/
+#test
+{
+	margin-left:300px;
+}
+#test ul li
+{
+	color:#FF1234;
+	height:140px;
+	width:250px;
+	background-color:#FF6611;
+	border:10px solid #000000;
+	margin:20px;
+	float: left;
+	/*display: inline-block;*/
+	list-style:none;
+	transition:all ease-in-out 2000ms;
+
+}
+#test ul li:hover
+{
+	border:10px solid red;
+	cursor:pointer;
+
+}
+#one
+{
+	background: url("image/moon.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+
+
+}
+#two
+{
+	background: url("image/mega.png") #CCC no-repeat left top;
+	background-size: 100%;
+
+}
+#three
+{
+	background: url("image/link.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+
+}
+#four
+{
+	background: url("image/noodle.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+
+}
+#five
+{
+	background: url("image/technology.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+
+}
+#six
+{
+	background: url("image/houses.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+
+}
+
+
+p
+{
+	font-size:200%;
+	color:rgb(0,0,0);
+}
+
+* 
+{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	
+}
+#square
+{
+	font-size:100%;
+	margin-top:50px;
+	margin-left:50%;
+	display: inline-block;
+	color:green;
+}
+/*#square:hover
+{
+	background-color:yellow;
+	font-size:500%
+}*/
+body
+{
+	background-color:#272727;
+	background: url("image/letgo.jpg") #CCC no-repeat left top;
+	background-size: 100%;
+	
+}
+
+nav
+ {
+	width:240px;
+	height:100%;
+	background-color:rgb(0,0,0);
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:100;
+	/*z-index:1000;*/
+	transition:all ease-in-out 1000ms;
+	-webkit-transiton: all ease-in-out 1000ms;
+}
+/* #logo
+{
+	display:block;
+	width: 80%;
+	margin:0 auto;
+	padding-top:60px;
+	padding-bottom:60px;
+	border-radius:1000px;
+	
+} */
+
+#player
+{
+	width:30%;
+	height:10%;
+	margin-left:240px;
+	position:fixed;
+	left:20%;
+	top: 50%;
+	 visibility: hidden;
+}
+#rockman
+{
+	position:fixed;
+
+	left:400px;
+	top:400px;
+	width:120px;
+	height:100px;
+	cursor:pointer;
+	z-index: 9;
+
+}
+#rockman:active {
+    width: 70px;
+    height: 74px;
+}
+#close
+{
+	position:fixed;
+	display: block;
+	left:-100px;
+	top:0px;
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	z-index: 10;
+}
+
+#logo
+{
+	display:block;
+	width: 90px;
+	height:90px;
+	margin:0 auto;
+	margin-top:60px;
+	margin-bottom:60px;
+	border-radius:1000px;
+	/* background-image: url(logo.png); */
+	z-index:1000;
+	/*background-size:cover;*/
+	cursor: pointer;	
+}
+
+
+.lab,.php
+{
+	font-family:fantasy;
+	position:absolute;
+	top:-200px;
+	font-size:100%;
+	/*visibility: hidden;*/
+	/*margin-top:20px;*/
+	margin-left:30px;
+
+}
+
+
+
+nav ul li
+{
+	
+	font-size:200%;
+	color:red;
+	font-family:fantasy;
+	cursor:pointer;
+	
+	list-style:none;
+	margin:0 auto;
+	text-align: center;
+	border:5px solid #FFFFFF;
+	transition:all ease-in-out 2000ms;
+	/*-webkit-transiton: all ease-in-out 2000ms;*/
+}
+
+nav ul li a 
+{
+	
+	font-family:fantasy;
+	/*font-weight:500;*/
+	color:#fff;
+	/*text-transform: uppercase;*/
+	cursor:pointer;
+	font-size:200%; 
+
+
+}
+nav ul li a:hover
+{	
+
+	color:#f00;
+}
+
+nav ul li:hover
+{	
+
+	border:5px solid #FF0000;
+}
+#pointerL 
+{
+	width: 40px;
+	height:40px;
+	background-color:#fff;
+	background-image: url(image/left.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:2000;
+	cursor: pointer;
+	border-radius #fff;
+	border-radius:100px;
+	transition:all ease-in-out 200ms;
+	-webkit-transiton: all ease-in-out 200ms;
+}
+#pointerR 
+{
+	width: 40px;
+	height:40px;
+	background-color:#000;
+	background-image: url(image/right.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:500;
+	cursor: pointer;
+	border-radius #fff;
+	border-radius:100px;
+	transition:all ease-in-out 200ms;
+	-webkit-transiton: all ease-in-out 200ms;
+}
+
+#pointerL:hover ,#pointerR,#logo:hover 
+{
+		opacity:0.7;
+}
+
+#increase
+{
+	top:200px;
+	right:300px;
+	width:200px;
+	height:100px;
+}
+#pointer
+{
+	width:20px;
+	height:20px;
+	position:absolute;
+	margin-top:15px;
+	left:30px;
+	
+}
+
+/*iframe
+{
+	width:853px;
+	height:480px;
+	border: 1px #999 solid;
+}*/

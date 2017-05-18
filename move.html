@@ -1,0 +1,27 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<img id="avatar" src="close.png" style="position:absolute; width:20px; height:20px;" />
+</body>
+
+<script lang="javascript">
+
+function updateAvatarPosition( e )
+{
+    var avatar = document.getElementById("avatar");
+ avatar.style.left = e.x;
+avatar.style.top = e.y;
+
+    // alert( "e( " + e.x + ", " + e.y + " )" );    
+    // alert( "avatar( " + avatar.x + ", " + avatar.y + " )" );
+}
+
+document.onmousemove = updateAvatarPosition;
+
+
+</script>
+
+</html>
