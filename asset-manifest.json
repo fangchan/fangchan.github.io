@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/first-spa/static/css/main.48ab41c3.css",
+    "main.js": "/first-spa/static/js/main.9241cb7a.js",
+    "static/media/logo.png": "/first-spa/static/media/logo.aed776c57a88b68d5a9d.png",
+    "index.html": "/first-spa/index.html",
+    "main.48ab41c3.css.map": "/first-spa/static/css/main.48ab41c3.css.map",
+    "main.9241cb7a.js.map": "/first-spa/static/js/main.9241cb7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48ab41c3.css",
+    "static/js/main.9241cb7a.js"
+  ]
+}
