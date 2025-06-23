@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+// src/OrderPage.js
+import React, { useState } from 'react';
 import styles from './OrderPage.module.css'; // Import the CSS Module
+import Navigation from './Navigation';
 
-const OrderPage = ({ isLoggedIn, role }) => {
-    const navigate = useNavigate();
+const OrderPage = () => {
     const [activeTab, setActiveTab] = useState('may'); // Initial state for active tab
     const [quantities, setQuantities] = useState(Array(3).fill(0)); // Assuming 3 items
 
@@ -12,13 +12,6 @@ const OrderPage = ({ isLoggedIn, role }) => {
         { id: 2, name: '香橙雪糕', description: '剉冰 50個', price: 35, image: 'path_to_image_2.jpg' },
         { id: 3, name: '覆盆子慕斯', description: '剉冰 45個', price: 40, image: 'path_to_image_3.jpg' },
     ];
-
-    useEffect(() => {
-        // 检查用户是否登录且角色为 admin
-        if (!isLoggedIn || role !== 'admin') {
-            navigate('/'); // 重定向到主页
-        }
-    }, [isLoggedIn, role, navigate]);
 
     const handleIncrease = (index) => {
         setQuantities((prev) => {
@@ -72,6 +65,7 @@ const OrderPage = ({ isLoggedIn, role }) => {
 
             {activeTab === 'june' && (
                 <div className={styles.items}>
+                    {/* Replace with June items if different */}
                     {items.map((item, index) => (
                         <div key={item.id} className={styles.itemCard}>
                             <img src={item.image} alt={item.name} className={styles.itemImage} />

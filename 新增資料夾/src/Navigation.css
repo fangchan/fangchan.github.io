@@ -9,7 +9,7 @@
     min-height: 100vh; /* Ensure it covers full viewport height */
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange children vertically */
-    /*justify-content: space-between; /* Space out children */
+    justify-content: space-between; /* Space out children */
 }
 
 body {
@@ -77,22 +77,6 @@ body {
 
 .dropdown-menu a:hover {
     background-color: #e2e2e2; /* Change background on hover */
-}
-
-ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-}
-
-.demo,
-.local {
-    background-color: pink;
-    display: none;
-}
-
-li{
-    margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
