@@ -57,7 +57,7 @@ const Login = ({ isLoggedIn, onLoginSuccess }) => {
             <button type="submit">Login</button>
              <br /> <br />
             <div> 
-                <a href="/forget">Forgotss Password?</a> {/* Link for forgot password */}
+                <a href="/forget">Forgot Password?</a> {/* Link for forgot password */}
             </div>
         </form>
     );
