@@ -289,7 +289,7 @@ const Navigation = ({ onLogout, role,username, isLoggedIn }) => {
                             <Link to="/login" onClick={toggleMenu}>{t('Search Shops')}</Link>
 
                             <Link to="/OrderPage" onClick={toggleMenu}>{t('Sign Up as Buyer')}</Link>
-                            <Link to={process.env.public_url+'/login'} onClick={toggleMenu}>{t('Login')}</Link>
+                            <Link to='/login' onClick={toggleMenu}>{t('Login')}</Link>
                             </>
                              // Show Login if not logged in
                         ) : (

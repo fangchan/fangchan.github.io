@@ -73,7 +73,7 @@ function App() {
                 <Routes>
                      <Route path="/" element={<Home />} />
                     <Route path="/signup" element={<Signup />} />
-                    <Route path={process.env.public_url+'/login'} element={<Login isLoggedIn={isLoggedIn} onLoginSuccess={handleLoginSuccess} />} />
+                    <Route path='/login' element={<Login isLoggedIn={isLoggedIn} onLoginSuccess={handleLoginSuccess} />} />
                     <Route path="/Forget" element={<Forget/>} />
                     <Route path="/statistic" element={<Statistics />} />
                     <Route path="/BuyEaseForm" element={<BuyEaseForm />} />
