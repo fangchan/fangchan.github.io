@@ -18,7 +18,7 @@ const Login = ({ isLoggedIn, onLoginSuccess }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://fangchan.github.io/server/login', { username, password });
+            const response = await axios.post('https://fangchan.github.io/server/server', { username, password });
             console.log('Response:', response);
             // Ensure response.data exists
             if (response && response.data) {
