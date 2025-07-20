@@ -3,6 +3,9 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../css/Login.css';
 
+//const API_URL = 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_SERVER_URL;
+
 const Login = ({ isLoggedIn, onLoginSuccess }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -18,7 +21,7 @@ const Login = ({ isLoggedIn, onLoginSuccess }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://server-c5vb.onrender.com', { username, password });
+            const response = await axios.post(`${API_URL}/login`, { username, password });
             console.log('Response:', response);
             // Ensure response.data exists
             if (response && response.data) {
