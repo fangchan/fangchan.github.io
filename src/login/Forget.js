@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import styles from './Signup.module.css';
+import { t } from 'i18next';
+
+const API_URL = process.env.REACT_APP_SERVER_URL;
 
 const SignupAndSendEmail = () => {
     const { t } = useTranslation();
@@ -20,10 +23,11 @@ const SignupAndSendEmail = () => {
         e.preventDefault();
         setLoading(true);
         try {
-            await axios.post('http://localhost:5000/forget', { username, email, generatedPassword });
+            
+            await axios.post(`${API_URL}/forget`, { username, email, generatedPassword });
             alert(t('User created!'));
 
-            await axios.post('http://localhost:5000/send-email', {
+            await axios.post(`${API_URL}/send-email`, {
                 email,
                 content: `Your Password is ${generatedPassword}`,
                 header: 'Welcome!',
@@ -69,7 +73,7 @@ const SignupAndSendEmail = () => {
                 <button type="submit">{t('Send Email')}</button>
                 <br /> <br />
                 <div> 
-                <a href="/login">Login</a> {/* Link for forgot password */}
+                <Link to='/login'>{t('login')}</Link>
                 </div>
             </form>
             
