@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import '../css/Login.css';
+import { t } from 'i18next';
 
 //const API_URL = 'http://localhost:5000';
 const API_URL = process.env.REACT_APP_SERVER_URL;
@@ -60,7 +61,7 @@ const Login = ({ isLoggedIn, onLoginSuccess }) => {
             <button type="submit">Login</button>
              <br /> <br />
             <div> 
-                <a to="/forget">Forgot Password?</a> {/* Link for forgot password */}
+                <Link to='/forget'>{t('Forgot Password')}</Link>
             </div>
         </form>
     );
