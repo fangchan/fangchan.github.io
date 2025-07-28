@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
 import styles from './Signup.module.css'; // Import the CSS module
-
+const API_URL = 'https://server-c5vb.onrender.com';
 const SignupAndSendEmail = () => {
     const { t } = useTranslation(); // Use the translation hook
     const [username, setUsername] = useState('');
@@ -24,12 +24,12 @@ const SignupAndSendEmail = () => {
         setLoading(true); // Set loading to true
         try {
             // First, sign up the user
-            await axios.post('http://localhost:5000/signup', { username, password, role, email, generatedPassword });
+            await axios.post(`${API_URL}/signup`, { username, password, role, email, generatedPassword });
             alert(t('User created!')); // Use translation for alerts
 
             // Then, send the email with the generated password
             const content = `Your Password is ${generatedPassword}`; // Set email content
-            await axios.post('http://localhost:5000/send-email', {
+            await axios.post(`${API_URL}/send-email`, {
                 email,
                 content,
                 header: 'Welcome!',

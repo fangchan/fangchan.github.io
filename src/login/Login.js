@@ -4,7 +4,6 @@ import { useNavigate,Link } from 'react-router-dom';
 import '../css/Login.css';
 import { t } from 'i18next';
 
-//const API_URL = 'http://localhost:5000';
 const API_URL = process.env.REACT_APP_SERVER_URL;
 
 const Login = ({ isLoggedIn, onLoginSuccess }) => {

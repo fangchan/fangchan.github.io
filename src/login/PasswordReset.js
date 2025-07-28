@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../css/Login.css';
-
+const API_URL = 'https://server-c5vb.onrender.com';
 const Login = ({ isLoggedIn, onLoginSuccess }) => {
     const [newpassword, setNewpassword] = useState('');
     const [confirmpassword, setConfirmpassword] = useState('');
@@ -18,7 +18,7 @@ const Login = ({ isLoggedIn, onLoginSuccess }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/passwordreset', { newpassword, confirmpassword });
+            const response = await axios.post(`${API_URL}/passwordreset`, { newpassword, confirmpassword });
             console.log('Response:', response);
             // Ensure response.data exists
             if (response && response.data) {

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
+const API_URL = 'https://server-c5vb.onrender.com';
+
 const SendEmail = () => {
     const [email, setEmail] = useState('');
     const [content, setContent] = useState('');
@@ -15,7 +17,7 @@ const SendEmail = () => {
 
     const handleSendEmail = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/send-email', {
+            const response = await axios.post(`${API_URL}/send-email`, {
                 email,
                 content,
                 header: 'testing header',
