@@ -5,7 +5,7 @@ import '../css/Login.css';
 import { t } from 'i18next';
 
 
-const API_URL = process.env.REACT_APP_URL;
+const API_URL = process.env.REACT_APP_SERVER_URL;
 
 const Login = ({ isLoggedIn, onLoginSuccess }) => {
     const [username, setUsername] = useState('');
@@ -22,9 +22,9 @@ const Login = ({ isLoggedIn, onLoginSuccess }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-             console.log(process.env.REACT_APP_URL);
-            const response = await axios.post(`${API_URL}/login123`, { username, password });
-            
+              console.log(process.env.REACT_APP_SERVER_URL);
+            const response = await axios.post(`${API_URL}/login`, { username, password });
+           
             console.log('Response:', response);
             // Ensure response.data exists
             if (response && response.data) {
